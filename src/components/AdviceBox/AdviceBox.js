@@ -9,9 +9,9 @@ const AdviceBox = () => {
   const [advice, setAdvice] = useState('')
   const [adviceId, setAdviceId] = useState('')
 
-  const fetchData = () => {
+  const fetchData  = async () => {
     const API = 'https://api.adviceslip.com/advice'
-    axios
+    await axios
       .get(API)
       .then(res => {
         const getAdviceId = res.data.slip.id
