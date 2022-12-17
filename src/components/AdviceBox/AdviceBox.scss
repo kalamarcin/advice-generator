@@ -1,7 +1,6 @@
 .box {
   background-color: #313a48;
   width: 90%;
-
   border-radius: 20px;
   padding: 20px 25px;
   display: flex;
@@ -37,16 +36,25 @@
     position: relative;
     top: 50px;
     cursor: pointer;
-    
+
     &:hover {
-      box-shadow: 0 0px 20px #53ffaa ;
+      box-shadow: 0 0px 20px #53ffaa;
       transition: 0.3s;
     }
     button {
       background-color: transparent;
       border: none;
       text-decoration: none;
-     
+      cursor: pointer;
     }
+  }
+}
+@media screen and (min-width: 800px) {
+  .box {
+    margin-top: 150px;
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }
