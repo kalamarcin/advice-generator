@@ -1,8 +1,52 @@
 .box {
-    background-color: #313A48    ;
-    width: 90%;
-    height: 50vh;
-    border-radius: 20px;
+  background-color: #313a48;
+  width: 90%;
+
+  border-radius: 20px;
+  padding: 20px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .box__id {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #53ffaa;
+    font-size: 11px;
+    letter-spacing: 3.5px;
+  }
+
+  .box__title {
+    text-align: center;
+    color: #cee3e9;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 45px;
+  }
+  .box__circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    width: 64px;
+    background-color: #53ffaa;
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+    cursor: pointer;
     
-    
+    &:hover {
+      box-shadow: 0 0px 20px #53ffaa ;
+      transition: 0.3s;
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      text-decoration: none;
+     
+    }
+  }
 }
